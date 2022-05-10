@@ -1,0 +1,166 @@
+body{
+    margin: 0px;
+    background-color: #FED73D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.minion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    width: 700px;
+}
+
+.black-strip{
+    height: 100px;
+    width: 100%;
+    background-color: #402009;
+    position:absolute;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    animation-name: blackstrip;
+    animation-duration: 1s;
+}
+@keyframes blackstrip{
+    from{
+     width: 0;
+    }
+    to{
+     width: 100%;
+    }
+}
+.circle{ 
+    height: 725px;
+    width:  725px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+    
+.circle-left,.circle-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 260px;
+    width: 260px;
+    border: 50px solid #656252;
+    box-shadow: 0 15px 0 0 #FCCB39;
+    border-radius: 50%; 
+}
+
+.circle-left{
+    position: absolute;
+    right: 0px;
+}
+
+.circle-right{
+    position: absolute;
+    left: 0px;
+}
+
+.white{
+    height: 200px;
+    width: 255px;
+    background-color: #FCF4CA;
+    border-radius: 50%;
+    border: 15px solid #F0EBC8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.eye{
+    height: 2.0em;
+    width: 2.0em;
+    background-color: #402110;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.eye-outer{
+    height: 100px;
+    width: 100px;
+    background-color: #8B5E2D;
+    border-radius: 50%;
+    border: 5px solid #402110;
+}
+
+.eye-reflection{
+    background-color: #ffff;
+    opacity: 0.2;
+}
+
+.eye-reflection.one{
+    height: 15px;
+    width: 28px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: -25px;
+    transform: rotate(25deg);
+}
+
+.eye-reflection.two{
+    height: 25px;
+    width: 35px;
+    border-radius: 70% 30% 36% 64% / 70% 32% 68% 30%;
+    position: absolute;
+    bottom: -22px;
+    right: -20px;
+}
+
+.smile{
+    height: 120px;
+    width: 275px;
+    background-color: #8A1A1E;
+    border-radius: 0 0 10rem 10rem;
+    box-shadow: 0 15px 0 0 #FCCB39;
+    margin-top: 525px;
+    overflow: hidden;
+    animation-name: smile;
+    animation-duration: 1.5s;
+}
+
+@keyframes smile{
+    from{
+     height: 0;
+    }
+    to{
+     height: 120px;
+    }
+}
+
+.upper-teeths{
+    display: inline-flex;
+    display: flex;
+    justify-content: center;
+}
+
+.lower-teeths{
+    display: inline-flex;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.uteeth{
+    height: 40px;   
+    width: 45px;
+    background-color: #ffff;
+    border-radius: 0px 0px 12px 12px;
+    border: 0.1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.lteeth{
+    height: 40px;   
+    width: 45px;
+    background-color: #ffff;
+    border-radius: 8px 8px 0px 0px;
+    border: 0.1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
